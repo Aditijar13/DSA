@@ -2,6 +2,12 @@
 // Platform: LeetCode
 // Approach: Counting + Greedy
 //
+// Idea:
+// Count number of 'L', 'R', and '_' (wildcards).
+// To maximize distance, assign all '_' in one direction.
+//
+// Distance = |L - R| + wildcardCount
+//
 
 
 class Solution {
