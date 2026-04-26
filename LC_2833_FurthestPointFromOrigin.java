@@ -1,3 +1,8 @@
+// Problem: Furthest Point From Origin
+// Platform: LeetCode
+// Approach: Counting + Greedy
+//
+
 
 class Solution {
     public int furthestDistanceFromOrigin(String moves) {
