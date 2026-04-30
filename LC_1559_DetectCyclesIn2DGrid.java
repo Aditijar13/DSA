@@ -1,6 +1,7 @@
 // Problem: Detect Cycles in 2D Grid
 // Approach: BFS with Parent Tracking
-
+// Time Complexity: O(n * m)
+// Space Complexity: O(n * m)
 
 class Solution {
     public boolean containsCycle(char[][] grid) {
