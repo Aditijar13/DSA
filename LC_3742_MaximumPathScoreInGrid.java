@@ -1,3 +1,14 @@
+// Problem: Maximum Path Score in a Grid
+// Approach: DFS + Memoization (3D DP)
+//
+// Idea:
+// Move from (0,0) → (m-1,n-1)
+// You can only move right or down (reverse in DFS: up or left)
+//
+// k = number of positive cells you can still take
+//
+// If current cell is positive → consume 1 from k
+//
 class Solution {
     private int[][] grid;
     private Integer[][][] dp;
