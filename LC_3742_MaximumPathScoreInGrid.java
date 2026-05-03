@@ -9,6 +9,10 @@
 //
 // If current cell is positive → consume 1 from k
 //
+// Time Complexity: O(m * n * k)
+// Space Complexity: O(m * n * k)
+
+
 class Solution {
     private int[][] grid;
     private Integer[][][] dp;
