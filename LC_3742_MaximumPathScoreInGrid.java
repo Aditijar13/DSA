@@ -14,3 +14,27 @@ class Solution {
 
         return ans < 0 ? -1 : ans;
     }
+
+ private int dfs(int i, int j, int k) {
+        // Out of bounds or invalid k
+        if (i < 0 || j < 0 || k < 0) return NEG_INF;
+
+        // Base case
+        if (i == 0 && j == 0) return 0;
+
+        if (dp[i][j][k] != null) return dp[i][j][k];
+
+        int value = grid[i][j];
+        int newK = k;
+
+        // If positive, consume k
+        if (value > 0) newK--;
+
+        int fromUp = dfs(i - 1, j, newK);
+        int fromLeft = dfs(i, j - 1, newK);
+
+        int best = value + Math.max(fromUp, fromLeft);
+
+        return dp[i][j][k] = best;
+    }
+}
