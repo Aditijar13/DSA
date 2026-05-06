@@ -11,6 +11,8 @@
 // s+s = "abcdeabcde"
 // goal = "cdeab" exists inside it
 //
+// Time Complexity: O(n)
+// Space Complexity: O(n)
 
 class Solution {
     public boolean rotateString(String s, String goal) {
