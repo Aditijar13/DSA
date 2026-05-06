@@ -1,4 +1,5 @@
-
+// Problem: Rotate String
+// Platform: LeetCode
 class Solution {
     public boolean rotateString(String s, String goal) {
         return s.length() == goal.length() &&
