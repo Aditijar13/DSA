@@ -1,3 +1,5 @@
+// Problem: 48. Rotate Image
+// Platform: LeetCode
 
 class Solution {
     public void rotate(int[][] matrix) {
