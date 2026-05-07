@@ -1,5 +1,9 @@
 // Problem: 48. Rotate Image
 // Platform: LeetCode
+// Approach: Extra Matrix
+//
+// Time Complexity: O(n²)
+// Space Complexity: O(n²)
 
 class Solution {
     public void rotate(int[][] matrix) {
