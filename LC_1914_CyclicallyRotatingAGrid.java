@@ -1,3 +1,16 @@
+// Problem: 1914. Cyclically Rotating a Grid
+// Platform: LeetCode
+// Approach: Layer / Ring Simulation
+//
+// Idea:
+// Treat each layer as a 1D circular array.
+// Extract elements of layer.
+// Rotate by k positions.
+// Put back into matrix.
+//
+// Time Complexity: O(m * n)
+// Space Complexity: O(m * n)
+
 class Solution {
     private int rows;
     private int cols;
