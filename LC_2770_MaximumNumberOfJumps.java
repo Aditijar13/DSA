@@ -1,4 +1,15 @@
-
+/**
+ * Problem: Maximum Number of Jumps to Reach Last Index
+ * Platform: LeetCode 2770
+ *
+ * Approach:
+ * Use DFS + Memoization (Top Down DP).
+ * From each index, try jumping to every next valid index.
+ * Store results to avoid recomputation.
+ *
+ * Time Complexity: O(n^2)
+ * Space Complexity: O(n)
+ */
 
 class Solution {
 
