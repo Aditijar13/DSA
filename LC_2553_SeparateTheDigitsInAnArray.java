@@ -1,3 +1,18 @@
+// Problem: 2553. Separate the Digits in an Array
+// Platform: LeetCode
+// Approach: Extract Digits + Reverse Order Storage
+//
+// Idea:
+// Traverse each number in nums.
+// Extract digits using modulo (%) and division (/).
+// Digits come in reverse order, so store temporarily.
+// Reverse temporary list and append to final result.
+// Convert list into int[] array.
+//
+// Time Complexity: O(T)
+// where T = total number of digits in all numbers
+//
+// Space Complexity: O(T)
 
 class Solution {
     public int[] separateDigits(int[] nums) {
