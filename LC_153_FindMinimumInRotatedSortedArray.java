@@ -1,5 +1,16 @@
-
-
+/*
+ * Problem: Find Minimum in Rotated Sorted Array
+ * Platform: LeetCode
+ * Problem Number: 153
+ *
+ * Approach:
+ * - Use Binary Search to locate the minimum element.
+ * - Check whether current search space is already sorted.
+ * - Decide which half contains the pivot/minimum element.
+ *
+ * Time Complexity: O(log n)
+ * Space Complexity: O(1)
+ */
 public class Solution {
 
     public int findMin(int[] nums) {
