@@ -1,4 +1,16 @@
-
+/*
+ * Problem: Jump Game III
+ * Platform: LeetCode
+ * Problem Number: 1306
+ *
+ * Approach:
+ * - Use BFS starting from the given index.
+ * - Explore forward and backward jumps.
+ * - Mark visited indices using -1.
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ */
 class Solution {
 
     public boolean canReach(int[] arr, int start) {
