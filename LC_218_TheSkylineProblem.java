@@ -1,4 +1,16 @@
-
+/*
+ * Problem: The Skyline Problem
+ * Platform: LeetCode
+ * Problem Number: 218
+ *
+ * Approach:
+ * - Use coordinate compression.
+ * - Track maximum height for each compressed segment.
+ * - Add skyline points whenever height changes.
+ *
+ * Time Complexity: O(n^2) worst case
+ * Space Complexity: O(n)
+ */
 class Solution {
 
     public List<List<Integer>> getSkyline(int[][] buildings) {
