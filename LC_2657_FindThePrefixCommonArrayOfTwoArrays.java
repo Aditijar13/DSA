@@ -1,4 +1,16 @@
-
+/*
+ * Problem: Find the Prefix Common Array of Two Arrays
+ * Platform: LeetCode
+ * Problem Number: 2657
+ *
+ * Approach:
+ * - Use a single frequency array.
+ * - When frequency becomes 2,
+ *   that element is now common.
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ */
 class Solution {
 
     public int[] findThePrefixCommonArray(int[] A, int[] B) {
