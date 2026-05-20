@@ -12,34 +12,22 @@
  * Space Complexity: O(n)
  */
 class Solution {
-
     public int[] findThePrefixCommonArray(int[] A, int[] B) {
-
         int n = A.length;
-
         int[] result = new int[n];
 
-        int[] frequency = new int[n + 1];
-
-        int commonCount = 0;
-
+        int[] frequencyA = new int[n + 1];  
+        int[] frequencyB = new int[n + 1];  
+      
         for (int i = 0; i < n; i++) {
+            frequencyA[A[i]]++;
+            frequencyB[B[i]]++;
 
-            frequency[A[i]]++;
-
-            if (frequency[A[i]] == 2) {
-                commonCount++;
+            for (int value = 1; value <= n; value++) {
+                result[i] += Math.min(frequencyA[value], frequencyB[value]);
             }
-
-            frequency[B[i]]++;
-
-            if (frequency[B[i]] == 2) {
-                commonCount++;
-            }
-
-            result[i] = commonCount;
         }
-
+      
         return result;
     }
 }
