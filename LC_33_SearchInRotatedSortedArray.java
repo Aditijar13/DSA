@@ -1,4 +1,21 @@
-
+/*
+ * Problem: Search in Rotated Sorted Array
+ * Platform: LeetCode
+ * Problem Number: 33
+ *
+ * Approach:
+ * - First find the pivot (minimum element index)
+ *   using Binary Search.
+ * - Pivot divides the array into two sorted halves.
+ * - Perform Binary Search on the first half.
+ * - If not found, perform Binary Search on the second half.
+ *
+ * Time Complexity: O(log n)
+ *      Pivot Search : O(log n)
+ *      Binary Search : O(log n)
+ *
+ * Space Complexity: O(1)
+ */
 class Solution {
 
     public int search(int[] nums, int target) {
