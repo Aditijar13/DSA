@@ -1,4 +1,24 @@
+/*
+Problem: Earliest Finish Time for Land and Water Rides II
+Platform: LeetCode 3665
 
+Approach:
+1. Consider both possible ride orders:
+   - Land -> Water
+   - Water -> Land
+2. For a fixed order:
+   - Find the earliest finishing ride from the first category.
+   - Try every ride from the second category.
+   - The second ride can start only after:
+       a) the first ride finishes
+       b) the second ride becomes available
+   - Start time = max(firstRideEnd, secondRideStartTime)
+3. Compute the minimum finish time among all valid second rides.
+4. Return the minimum answer from both orders.
+
+Time Complexity: O(n + m)
+Space Complexity: O(1)
+*/
 class Solution {
     public int earliestFinishTime(
         int[] landStartTime,
