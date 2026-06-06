@@ -4,17 +4,19 @@
  * Problem Number: 2574
  *
  * Approach:
- * - Compute total sum of array first (rightSum).
- * - Maintain leftSum while iterating.
- * - At each index i:
- *      rightSum -= nums[i]  (exclude current element)
- *      result[i] = |leftSum - rightSum|
- *      leftSum += nums[i]
- *
- * This avoids recomputing prefix/suffix sums separately.
+ * - First calculate the total sum of the array.
+ * - Use rightSum to represent the sum of elements
+ *   to the right of the current index.
+ * - Use leftSum to represent the sum of elements
+ *   to the left of the current index.
+ * - For each index:
+ *      1. Remove current element from rightSum.
+ *      2. Compute absolute difference.
+ *      3. Add current element to leftSum.
  *
  * Time Complexity: O(n)
- * Space Complexity: O(1) extra (excluding output array)
+ * Space Complexity: O(1) extra space
+ *                  (excluding output array)
  */
 class Solution {
     public int[] leftRightDifference(int[] nums) {
