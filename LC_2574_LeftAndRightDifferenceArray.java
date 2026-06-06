@@ -16,3 +16,23 @@
  * Time Complexity: O(n)
  * Space Complexity: O(1) extra (excluding output array)
  */
+class Solution {
+    public int[] leftRigthDifference(int[] nums) {
+        int leftSum = 0;
+        int rightSum = Arrays.stream(nums).sum();
+      
+        int n = nums.length;
+      
+        int[] result = new int[n];
+      
+        for (int i = 0; i < n; i++) {
+            rightSum -= nums[i];
+          
+            result[i] = Math.abs(leftSum - rightSum);
+          
+            leftSum += nums[i];
+        }
+      
+        return result;
+    }
+}
